@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+		h1 {
+			font-family: Garamond, Georgia, serif;
+		}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            background-image: url('images/wall.jpg');
+			background-size: cover;
+        }
+		header {
+			text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+		}
+		header, footer {
+    		text-align: center;
+			align-content: center;
+    		padding: 10px;
+    		background-color: #324147;
+    		color: white;
+		}
+		nav {
+			font-family: Georgia, Garamond, serif;
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+			text-decoration: none;
+    		padding: 10px 15px;
+    		display: inline-block;
+    		color: black;
+    		background-color: white;
+    		transition: background-color 0.3s, color 0.3s;
+		}
+		nav a:hover {
+    		background-color: #afb5c7;
+    		color: white;
+		}
+		nav a:active {
+    		background-color: #afb5c7;
+    		color: white;
+		}
+        form {
+            width: 60%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        fieldset {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 95%;
+            max-width: 500px;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
+        button {
+            width: 100px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn {
+            background-color: green;
+            color: white;
+        }
+        .reset-btn {
+            background-color: red;
+            color: white;
+        }
+		section {
+            width: 85%;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+			align-content: center;
+			text-align: center;
+        }
+		h2 {
+			font-family: Georgia, Garamond, serif;
+			text-align: center;
+		}
+		legend {
+			font-family: Georgia, Garamond, serif;
+		}
+		footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>REAL LIVING Real Estate</h1>
+    </header>
+	<nav>
+        <a href="Rondilla_ex2.html">Home</a>
+        <a href="page2.html">Floor Plan</a>
+        <a href="page3.html">Apply Now</a>
+    </nav>
+	<section>
+    <h2><u>Application Form</u></h2>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="text" name="address" placeholder="Address">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="number" name="phone" placeholder="Phone Number">
+            <input type="date" name="Date of Birth" required>
+			<p></p>
+			<label>Gender:</label><br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+			<input type="radio" name="gender" value="other"> Other
+        </fieldset>
+        
+        <fieldset>
+            <legend>Preferences</legend>
+            <label>Preferred Contact Method:</label><br>
+            <input type="checkbox" name="contact" value="email"> Email
+            <input type="checkbox" name="contact" value="phone"> Phone
+        </fieldset>
+        
+        <fieldset>
+            <legend>Education</legend>
+            <label>Highest Degree:</label>
+            <select name="degree">
+                <option value="highschool">High School</option>
+                <option value="bachelor">Bachelor's Degree</option>
+                <option value="master">Master's Degree</option>
+                <option value="phd">PhD</option>
+            </select>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Additional Information</legend>
+            <textarea name="comments" placeholder="Comments" rows="4"></textarea>
+            <textarea name="house_details" placeholder="Describe your dream house here!" rows="4"></textarea>
+			<p></p>
+			
+			<label>Budget:</label>
+            <input list="budget" name="budget">
+            <datalist id="budget">
+                <option value="Php 100,000 - Php 999,999">
+                <option value="Php 1M - 10M">
+                <option value="Php 11M - 50M">
+                <option value="> Php 50M">
+            </datalist>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Search and Suggestions</legend>
+            <input type="search" name="search" placeholder="Search something...">
+            <br>
+        </fieldset>
+        
+        <div style="text-align: center;">
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </div>
+    </form>
+	</section>
+	<footer>
+        <p>&copy; 2025 Real Living Real Estate</p>
+		<p>Created by Johann Ezekiel B. Rondilla</p>
+    </footer>
+</body>
+</html>

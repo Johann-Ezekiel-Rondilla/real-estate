@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REAL LIVING Real Estate</title>
+    <style>
+		h1 {
+			font-family: Garamond, Georgia, serif;
+		}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            background-image: url('images/wall.jpg');
+            background-size: cover;
+        }
+        header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+		header, footer {
+    		text-align: center;
+			align-content: center;
+    		padding: 10px;
+    		background-color: #324147;
+    		color: white;
+		}
+        nav {
+			font-family: Georgia, Garamond, serif;
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+			text-decoration: none;
+    		padding: 10px 15px;
+    		display: inline-block;
+    		color: black;
+    		background-color: white;
+    		transition: background-color 0.3s, color 0.3s;
+		}
+		nav a:hover {
+    		background-color: #afb5c7;
+    		color: white;
+		}
+		nav a:active {
+    		background-color: #afb5c7;
+    		color: white;
+		}
+        section {
+            width: 85%;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+			align-content: center;
+			text-align: center;
+        }
+        img {
+			display: block;
+			margin: auto;
+            width: 350;
+			height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        h2 {
+			font-family: Georgia, Garamond, serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>REAL LIVING Real Estate</h1>
+    </header>
+    <nav>
+        <a href="Rondilla_ex2.html">Home</a>
+        <a href="page2.html">Floor Plan</a>
+        <a href="page3.html">Apply Now</a>
+    </nav>
+    <section id="floor_plan">
+        <h2><u>Floor Plan</u></h2>
+		<h3>View our latest bungalow here:</h3>
+        <p>Click on the corresponding names of the different areas in the floor plan to learn more about each section.</p>
+        <img src="images/floorplan.gif" usemap="#floorplan" alt="Floor Plan">
+        <map name="floorplan">
+            <area shape="rect" coords="18,44,65,79" href="dining.htm" alt="Dining Room">
+            <area shape="rect" coords="96,45,138,76" href="living.htm" alt="Living Room">
+            <area shape="rect" coords="184,49,246,80" href="master.htm" alt="Master Bedroom">
+			<area shape="rect" coords="142,215,191,232" href="library.htm" alt="Library">
+        </map>
+    </section>
+    <footer>
+        <p>&copy; 2025 Real Living Real Estate</p>
+		<p>Created by Johann Ezekiel B. Rondilla</p>
+    </footer>
+</body>
+</html>
